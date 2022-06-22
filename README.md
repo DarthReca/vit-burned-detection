@@ -13,10 +13,8 @@
 <summary>Table of Contents</summary>
 
 - [About](#about)
-  - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Usage](#usage)
 - [Authors & contributors](#authors--contributors)
 - [License](#license)
@@ -37,35 +35,17 @@ Code for *Vision transformers in burned area detection*. **The code will be rele
 > Why did you undertake it?
 > You don't have to answer all the questions -- just the ones relevant to your project.
 
-### Built With
-
-> **[?]**
-> Please provide the technologies that are used in the project.
-
 ## Getting Started
 
 ### Prerequisites
 
-To a full list of dependency look at *requirements.txt*. They can be installed with pip install -r requirements.txt.
-
-### Installation
-
-> **[?]**
-> Describe how to install and get started with the project.
+To a full list of dependency look at *requirements.txt*. They can be installed with `pip install -r requirements.txt`.
 
 ## Usage
 
 > **[?]**
 > How does one go about using it?
 > Provide various use cases and code examples here.
-
-## Roadmap
-
-See the [open issues](https://github.com/DarthReca/fire-detection/issues) for a list of proposed features (and known issues).
-
-- [Top Feature Requests](https://github.com/DarthReca/fire-detection/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/DarthReca/fire-detection/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/DarthReca/fire-detection/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Authors & contributors
 
