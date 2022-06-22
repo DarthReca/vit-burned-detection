@@ -5,7 +5,7 @@
 <div align="center">
 <br />
 
-[![Project license](https://img.shields.io/github/license/DarthReca/fire-detection.svg?style=flat-square)](LICENSE)
+[![Project license](https://img.shields.io/github/license/DarthReca/vit-burned-detection.svg?style=flat-square)](LICENSE)
   
 </div>
 
