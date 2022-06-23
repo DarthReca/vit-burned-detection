@@ -47,18 +47,8 @@ To a full list of dependency look at *requirements.txt*. They can be installed w
 > How does one go about using it?
 > Provide various use cases and code examples here.
 
-## Authors & contributors
-
-The original setup of this repository is by [Daniele Rege Cambrin](https://github.com/DarthReca).
-
-For a full list of all authors and contributors, see [the contributors page](https://github.com/DarthReca/fire-detection/contributors).
-
 ## License
 
 This project is licensed under the **Apache 2.0 license**.
 
 See [LICENSE](LICENSE) for more information.
-
-## Acknowledgements
-
-Thanks to Colomba Luca and Garza Paolo for the help given in building the project. We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources. 
