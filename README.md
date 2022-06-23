@@ -61,4 +61,4 @@ See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgements
 
-Thanks to Colomba Luca and Garza Paolo for the help given in building the project. We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources. 
+Thanks to [Colomba Luca](https://github.com/lccol) and Garza Paolo for the help given in building the project. We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources. 
