@@ -26,7 +26,7 @@
 
 ## About
 
-Code for *Vision transformers in burned area detection*. **The code will be released once ready for use. Some parts may be missing.**
+Code for *Vision transformers in burned area delineation*. **The code will be released once ready for use. Some parts may be missing.**
 
 > **[?]**
 > Provide general information about your project here.
