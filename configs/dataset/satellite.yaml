@@ -1,0 +1,36 @@
+folder: "./data/RESCUE/sentinel-hub"
+mask_one_hot: False
+height: 512
+width: 512
+product_list: ["sentinel2"]
+mode: post
+filter_validity_mask: True
+process_dict:
+  sentinel2: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+activation_date_csv: "./satellite_data.CSV"
+mask_filtering: False
+only_burnt: true
+aggregate: false
+
+num_workers: 4
+batch_size: 8
+n_channels: 3
+seed: 47
+patience: 5
+tol: 0.01
+fold_separation_csv: "./satellite_data.CSV"
+rgb_channels: [3, 2, 1]
+
+train_transform:
+  dict_transforms.ToTensor: {}
+  dict_transforms.RandomRotate: { p: 0.5, rotation: 50 }
+  dict_transforms.RandomVerticalFlipping: { p: 0.5 }
+  dict_transforms.RandomHorizontalFlipping: { p: 0.5 }
+  dict_transforms.RandomShear: { p: 0.5, shear: 20 }
+
+test_transform:
+  dict_transforms.ToTensor: {}
+
+mask_intervals:
+  - [0, 36]
+  - [37, 255]

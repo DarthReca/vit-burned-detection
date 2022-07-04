@@ -1,0 +1,60 @@
+---
+model:
+  name: HFSegformer
+  parameters:
+    decode_head_params:
+      decoder_hidden_size: 768
+      hidden_sizes: &hidden_sizes [ 64, 128, 320, 512]
+      num_classes: 1
+      classifier_dropout_prob: 0.1
+      reshape_last_stage: &reshape_last True
+    backbone_params:
+      attention_probs_dropout_prob: 0
+      depths: [3 ,4, 18, 3]
+      hidden_sizes: *hidden_sizes
+      drop_path_rate: 0.1
+      hidden_act: gelu
+      hidden_dropout_prob: 0
+      mlp_ratios: [ 4, 4, 4, 4 ]
+      num_attention_heads: [ 1, 2, 5, 8 ]
+      num_channels: 12
+      patch_sizes: [ 7, 3, 3, 3 ]
+      reshape_last_stage: *reshape_last
+      sr_ratios: [8, 4, 2, 1]
+      strides: [4, 2, 2, 2]
+  weights:
+    segformer: weights/HF_mit_b3_12c.pth
+
+metrics:
+  Accuracy: { num_classes: &num_classes 2 }
+  Precision: { num_classes: *num_classes, average: none, mdmc_average: global }
+  Recall: { num_classes: *num_classes, average: none, mdmc_average: global }
+  F1Score: { num_classes: *num_classes, average: none, mdmc_average: global }
+
+losses:
+  classification:
+    name: loss.ComboLoss
+    normalized_scores: false
+    parameters:
+      losses:
+        loss.FocalLoss:
+          gamma: 5
+          alpha: 0.2
+        loss.GDiceLossV2:
+          self_compute_weight: true
+          apply_nonlin: [ Sigmoid, {} ]
+      weights: [0.5, 0.5]
+
+rgb_channels: [ 3, 2, 1 ]
+classes: *num_classes
+lr: 0.001
+
+optimizer:
+  name: AdamW
+  parameters:
+    weight_decay: 0.01
+
+scheduler:
+  name: StepLR
+  parameters:
+    step_size: 15

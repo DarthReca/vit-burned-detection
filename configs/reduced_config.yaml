@@ -1,0 +1,7 @@
+---
+name: Reduced default config
+
+model: configs/model/mitb3_12_dicefocal.yaml
+trainer: configs/trainer/default_cpu.yaml
+dataset: configs/dataset/reduced_satellite.yaml
+comet_api: configs/comet/api.yaml

@@ -1,0 +1,7 @@
+---
+name: MitB3 config
+
+model: configs/model/mitb3_12_dicefocal.yaml
+trainer: configs/trainer/default_gpu.yaml
+dataset: configs/dataset/satellite.yaml
+comet_api: configs/comet/api.yaml
