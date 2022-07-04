@@ -6,7 +6,7 @@
 <br />
 
 [![Project license](https://img.shields.io/github/license/DarthReca/vit-burned-detection.svg?style=flat-square)](LICENSE)
-  
+
 </div>
 
 <details open="open">
@@ -16,7 +16,6 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-- [Authors & contributors](#authors--contributors)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -26,39 +25,32 @@
 
 ## About
 
-Code for *Vision transformers in burned area delineation*. **The code will be released once ready for use. Some parts may be missing.**
-
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions -- just the ones relevant to your project.
+Code for _Vision transformers in burned area delineation_ by Daniele Rege Cambrin, Luca Colomba and Paolo Garza.
+**The code will be released once ready for use. Some parts may be missing.**
 
 ## Getting Started
 
 ### Prerequisites
 
-To a full list of dependency look at *requirements.txt*. They can be installed with `pip install -r requirements.txt`.
+To a full list of dependency look at _requirements.txt_. They can be installed with `pip install -r requirements.txt`.
 
 ## Usage
 
-> **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+Simply run `main.py` with arguments:
 
-## Authors & contributors
-
-The original setup of this repository is by [Daniele Rege Cambrin](https://github.com/DarthReca).
-
-For a full list of all authors and contributors, see [the contributors page](https://github.com/DarthReca/fire-detection/contributors).
+- ckpt_path: path of the checkpoint to load (default: None)
+- steps: list of steps to execute (default: train)
+- tag: comet experiment tag (default: test)
+- config_file: configuration file path (default: configs/reduced_config.yaml)
+- seed: for reproducibility (default: 7)
+- test_set: the name of the fold used as test set. (default: purple)
 
 ## License
 
-This project is licensed under the **Apache 2.0 license**.
+This project is licensed under the **Apache 2.0 license**. See [LICENSE](LICENSE) for more information.
 
-See [LICENSE](LICENSE) for more information.
+This repository use code from other repository. See their licenses in `licenses` folder.
 
 ## Acknowledgements
 
-Thanks to [Colomba Luca](https://github.com/lccol) and Garza Paolo for the help given in building the project. We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources. 
+We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources.
