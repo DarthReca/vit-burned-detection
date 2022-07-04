@@ -1,6 +1,6 @@
-<div align="center">
-  Vision transformers in burned area detection
-</div>
+<h1 align="center">
+  Vision transformers in burned area delineation
+</h1>
 
 <div align="center">
 <br />
