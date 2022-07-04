@@ -53,4 +53,4 @@ This repository use code from other repository. See their licenses in `licenses`
 
 ## Acknowledgements
 
-We have to thanks HPC@POLITO and SmartData@POLITO for the provided computation resources.
+We have to thanks HPC@POLITO and SmartData@POLITO for the provided computational resources.
