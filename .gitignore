@@ -6,6 +6,7 @@ __pycache__/
 data
 weights
 logger_out
+configs/comet
 
 # C extensions
 *.so
